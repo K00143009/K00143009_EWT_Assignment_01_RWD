@@ -1,0 +1,788 @@
+
+
+
+@import "compass/css3";
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  
+  background: #FF0000;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color:black;
+  font-family: monospace;
+	font-style: oblique;
+	
+}
+
+.navigation a{
+	
+ font-size:150%; 
+	
+	
+}
+
+
+.navigation a:hover {
+  background: darken(white, 2%);
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+
+}
+
+#footer {
+  list-style: none;
+  margin: 0; 
+  
+  background: #FF0000;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+#footer a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color:black;
+  font-family: monospace;
+  font-style: oblique;
+	
+}
+
+#footer a{
+	
+ font-size:150%; 
+	
+	
+}
+
+
+#footer a:hover {
+  background: darken(white, 2%);
+}
+
+@media all and (max-width: 1200px) {
+  #footer {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 800px) {
+  #footer {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+ #footer {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  #footer a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+ #footer li:last-of-type a {
+    border-bottom: none;
+  }
+
+}
+
+#logo52{
+	
+    display:block;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 90%;
+}
+	
+
+#topbarlogo {
+    display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	height: 250px;
+	background-color: darkgrey;
+	grid-template-areas: "..logo1 "
+					" signupbutton01"
+					" movietext" ;
+		  
+grid-auto-columns: 250px 1fr  150px;
+	align-items: flex-start;
+	grid-row-gap: 5opx;
+	justify-content: space-around
+		
+}
+
+.TROY01 p{
+
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-bottom: 20px;
+		
+		
+}
+
+.TROY01 h1{
+
+	padding-right: 50px;
+	padding-left: 50px
+	
+}
+
+
+.TROY01 h2{
+
+	padding-right: 50px;
+	padding-left: 50px
+}
+
+.TROY01 img {
+
+	padding-right: 50px;
+	padding-left: 50px
+}
+
+
+
+.ARMORE01 p{
+
+	padding-right: 50px;
+	padding-left: 50px
+}
+
+.ARMORE01 h1{
+
+	padding-right: 50px;
+	padding-left: 50px
+}
+
+
+.ARMORE01 h2{
+
+	padding-right: 50px;
+	padding-left: 50px
+}
+
+.ARMORE01 img {
+
+	padding-right: 50px;
+	padding-left: 50px
+}
+
+
+
+body {
+    background-color: #5181CE;
+    display: block;
+}
+
+
+/*
+			
+.mainarticle
+
+{
+    display: grid;
+    grid-template-columns: 1fr 10fr ;
+    grid-column-gap: 1em;
+			
+				background-size: cover;
+				max-height: 100%;
+  				max-width: 100%;
+			
+           } */
+
+.mainarticle img {  height: 100%, width: 100%; }
+
+@media screen only and (min-width: 800px){
+    
+    .mainarticle  {
+        display:none;
+    }
+} 
+
+@media screen only and (min-width: 500px){
+    
+    .mainarticle  {
+        display:none;
+    }
+} 
+
+
+@media all and (max-width: 1200px) {
+ .mainarticle {
+    justify-content: space-around;
+  }
+}
+
+ .mainarticle{
+    display: flex;
+    align-items: center;
+	background-color:red;
+  }
+
+.mainarticle h1{
+	
+	font-size: 170%;	
+}
+
+.mainarticle
+{
+	
+  text-decoration: none;
+  height: 240px;
+  margin-bottom: 30px;
+  padding: 30px;
+  color: white;
+  background: url('../images/hero_Phantom_Thread.jpg');
+  background-size: cover;
+  color: white;
+  text-shadow: 0px 0px 5px #000;
+  max-height: 100%;
+  max-width: 100%;
+
+}
+
+.mainarticle a{
+	text-decoration: none;
+	font-size: 150%;
+	
+}
+
+.mainarticle a{
+	
+	font-family: monospace
+		
+}
+
+.mainarticle a{
+	
+	font-style: oblique
+	
+}
+
+.mainarticle a{
+	
+	color: white;
+}
+
+.subarticles a {
+	
+font-family: monospace;
+	
+	
+}
+
+/*
+
+
+
+*/
+
+ /*    controlling display on reviews page top articles            */
+
+@media only screen and (min-width: 1200px){
+
+.reviewsminis01{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+     align-content: flex-start;
+}
+
+.reviewText1
+{
+    text-align: center;
+    max-width: 300px;
+	
+}
+
+.reviewText2
+{
+    text-align: center;
+    max-width: 300px;
+   
+}
+}
+
+.reviewsminis01{
+
+align-items: center;
+    
+}
+
+.reviewImg1 {
+height: 50%
+}
+
+
+.reviewsminis01 a{text-decoration: none;}
+
+
+@media only screen and (max-width: 500px){
+
+.reviewsminis01{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+    
+  	
+}
+  
+.reviewText1
+{
+   display:none;
+	
+}
+    
+
+.reviewText2
+{
+    display:none;
+}
+}
+
+.reviewsminis01{
+    
+    background-color: darkgrey;
+    
+    
+}
+
+.reviewsminis01 h1{
+	
+	font-size: 250%;
+    
+}
+
+.reviewsminis02 h1{
+	
+	font-size: 250%;
+    
+}
+
+
+.reviewsminis02{
+
+   background-color: darkgrey;
+
+}
+    
+    
+@media only screen and (min-width: 1200px){
+
+.reviewsminis02{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+   
+}
+
+.reviewText1
+{
+    text-align: top;
+   
+}
+
+.reviewText2
+{
+    text-align: top;
+ 
+}
+}
+
+.reviewsminis02{
+    
+    align-items: center;
+	width: auto; 
+}
+
+
+@media only screen and (max-width: 500px){
+
+.reviewsminis02{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-decoration: none;
+	
+}
+  
+.reviewText1
+{
+      text-align: top;
+	
+}
+    
+
+.reviewText2
+{
+    display:none;
+}
+}
+
+.reviewsminis02{
+    
+    background-color: none;
+       
+}
+
+.reviewsminis01 a{
+    text-decoration: none
+       
+}
+
+
+.reviewsminis01 a{ 
+    color: black
+}
+
+
+
+.allaboutus{
+    
+    background-color: darkgray;
+    
+}
+
+.allaboutus p{
+    
+    color: black;
+	padding-left: 5%;
+	padding-right: 5%;
+    
+}
+
+.allaboutus h1 {
+    
+    color: black;
+    font-size: 250%;
+    
+}
+
+.allaboutus h2 {
+    
+    color: black;
+     font-size: 175%;
+}
+
+.subarticles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+
+.subarticles {
+  max-width: 1200px; 
+  margin: 10px auto 30px;
+  background-color: darkgrey;
+}
+
+.subarticles h3{
+	
+	font-family: monospace;
+	font-size: 30px;
+	
+}
+
+@media (max-width: 600px) {
+    .subarticles {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .subarticles {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.subarticles a{
+	
+text-decoration: none;
+				
+}
+    
+.subarticles p{
+	
+	font-family: monospace;
+	text-align: center;
+		
+}
+
+
+.subarticles  h2 {
+	
+	font-size: 23px;
+	font-style: oblique;
+	font font-family: monospace;	
+}
+.subarticles  h1 {
+	
+	font-size: 27px;
+	font-style: oblique;
+	font font-family: monospace;	
+}
+
+
+.subarticles a{
+	
+	text-align: center;
+	color: black;
+}
+
+.Reviewshead h4{
+	
+	font-size: 30px;
+	text-align: center;
+	font-family: monospace;
+	 background: #FF0000;
+	
+}
+
+.IrishFilmNews{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+    padding-right: 25px;
+	padding-left: 25px;
+}
+
+	.IrishFilmNews{
+  max-width: 960px;
+  margin: 10px auto 30px;
+  background-color: darkgrey;
+}
+
+.IrishFilmNews a{
+	text-decoration: none;
+	text-align: center;
+	font-family: monospace;
+	font-size: 18px;
+	font-style: oblique
+}
+
+.IrishFilmNews a {
+	color:black;	
+}
+
+
+.Phantomthread a{
+	
+	text-decoration: none;
+	color: black;
+}
+
+.Phantomthread{
+    display: flex;
+    align-items: center;
+	background-color:grey;
+	padding-right: 25px;
+	padding-left: 25px;
+  }
+
+
+.Phantomthread{
+  min-width: 200px; 
+  margin: 10px auto 30px;
+  background-color: darkgrey;
+}
+
+
+.Phantomthread{
+  max-width: 1200px; 
+  margin: 10px auto 30px;
+  background-color: darkgrey;
+}
+
+
+@media (max-width: 50px) {
+   .Phantomthread {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+   .Phantomthread {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+.CINEGEAR a{
+	
+text-decoration: none;
+	color: black;
+	text-align: center;
+	
+}
+
+.CINEGEAR{
+	
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	
+}
+.allaboutus a{
+    
+    text-decoration: none;
+}
+
+
+.ARMORE01 h4{
+	
+	text-align: center;
+	color: red;
+}
+
+.TROY01 h4{
+	
+	text-align: center;
+	color: red;
+
+}
+
+.allaboutus h1{
+	
+	padding-left: 25px;
+}
+
+.allaboutus h2{
+	
+	padding-left: 35px;
+}
+
+.FEST01{
+	
+	background-color: darkgray;
+}
+.FEST01{
+	
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	
+}
+
+
+.FEST01 h3{
+	
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	
+}
+/*
+.reviewImg1 h5{
+    
+    display: flex;
+	align-items: center;
+  	justify-content: center;
+}
+
+
+.reviewImg2 h5{
+    
+    display: flex;
+	align-items: center;
+  	justify-content: center;
+    
+    
+}
+
+.reviewImg3 h5{
+    
+    display: flex;
+	align-items: center;
+  	justify-content: center;
+     
+}
+
+.reviewImg4 h5{
+    
+    display: flex;
+	align-items: center;
+  	justify-content: center;
+     
+}
+
+
+8?
+
+
+
+
+
+
+
+
+
+
+
